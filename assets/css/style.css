@@ -1,0 +1,442 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    IntroX
+Version:    1.0
+Last change:    24/10/2018 [fixed Float bug, vf]
+Author Name: Tomal
+Primary use:    Full Responsive html5 template
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+
+
+/*
+==========================================
+    google font
+==========================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Abel|Raleway:400,500');
+
+
+/*font-family: 'Abel', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+
+
+
+
+
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html,
+body{
+    height: 100%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+    margin: 0;
+}
+/*template section padding:*/
+.section-padding{
+    padding: 235px 0;
+}
+.image-section-padding{
+    padding: 480px 0;
+}
+/*
+==========================================
+    header menu Css
+==========================================
+*/
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.header-area .logo img{
+    max-width: 100%;
+    height: auto;
+}
+.main-menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.main-menu ul li a{
+    display: block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 40px 0;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+/*Search:*/
+.search a{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.search-form {
+    position: absolute;
+    background-color: #00a2ff;
+    color: #FFFFFF;
+    font-weight: bolder;
+    width: 250px;
+    top: 150%;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+}
+.search:hover .search-form{
+    opacity: 1;
+    visibility: visible;
+}
+.search-form input {
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+.search-form button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/*Side Menu:*/
+.side-menu-trigger{
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.side-menu {
+    position: fixed;
+    width: 360px;
+    height: 100vh;
+    z-index: 9;
+    color: #ffffff;
+    background-color: #00a2ff;
+    right: -370px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+}
+.side-menu-top{
+   padding-top: 10px;
+}
+.show-side-menu{
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.side-menu nav.menu{
+    padding-bottom: 30px;
+}
+.side-menu nav.menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+.side-menu nav.menu ul li a:hover{
+color: #1d2247;
+    font-weight: bold;
+}
+.side-menu-content{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.side-menu-bottom span{
+    font-size: 18px;
+}
+.side-menu-bottom p{
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 0;
+}
+.side-menu-social-icon a{
+    transition: .9s;
+}
+.side-menu-social-icon a:hover{
+    color: #FFFFFF;
+}
+.side-menu-copyright-area a{
+    color: #1d2247;
+    text-decoration: none;
+}
+.subscribe-area{}
+.subscribe-area form{
+    position: relative;
+}
+.subscribe-area form input{
+    color: #FFFFFF;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #FFFFFF;
+    width: 100%;
+}
+.subscribe-area form button {
+    background: none;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.side-menu-social-icon a{
+    display: inline-block;
+    color: #1d2247;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+/*
+==========================================
+    Slider Css
+==========================================
+*/
+.slider-area{
+    color: #ffffff;
+    background-image: url("../img/hero_area_background.jpg");
+    -moz-background-image: url("../img/hero_area_background.jpg");
+    -webkit-background-image: url("../img/hero_area_background.jpg");
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.single-slide img{
+    max-width: 100%;
+}
+.single-slide{
+    width: 100%;
+    height: 100vh;
+}
+.slider-content{
+    padding-top: 100px;
+}
+.slider-content h1{
+    font-size: 60px;
+    line-height: 65px;
+    font-family: 'Abel', sans-serif;
+}
+.slider-content p{
+    padding-top: 35px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.slider-area .owl-dots {
+    text-align: left;
+    position: absolute;
+    z-index: 1111;
+    padding-top: 20px;
+}
+.slider-area .owl-carousel.owl-carousel button.owl-dot {
+    width: 50px;
+    height: 5px;
+    background: #93a9d1 none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0 2px;
+    text-align: center;
+}
+.slider-area .owl-carousel.owl-carousel button.owl-dot.active{
+    background: #ffffff none repeat scroll 0 0;
+}
+
+/*
+==========================================
+    Arguably Css
+==========================================
+*/
+.arguably{}
+.section-img{}
+.section-img img{
+    max-width: 100%;
+    height: auto;
+}
+.section-content{
+    text-align: right;
+}
+.section-content h1{
+    font-size: 60px;
+    line-height: 65px;
+color: #93a9d1;
+    font-family: 'Abel', sans-serif;
+}
+.section-content p{
+    padding-top: 40px;
+    color: #3e4f5c;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+/*
+==========================================
+    Ran-home Css
+==========================================
+*/
+.ran-home{
+    background-image: url("../img/ran_home.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-image-content{
+    color: #ffffff;
+}
+.bg-image-content h1{
+    font-size: 60px;
+    line-height: 65px;
+    font-family: 'Abel', sans-serif;
+}
+.bg-image-content p{
+    padding-top: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+/*
+==========================================
+    Born Cassius Css
+==========================================
+*/
+
+/*
+==========================================
+    Following Css
+==========================================
+*/
+.following{
+    background-image: url("../img/following.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*
+==========================================
+    devoted Css
+==========================================
+*/
+
+/*
+==========================================
+    Boxer Css
+==========================================
+*/
+.boxer{
+    background-image: url("../img/boxer.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/*
+==========================================
+    Footer Css
+==========================================
+*/
+.footer-area{}
+.footer-tittle{
+    padding: 100px 0;
+    margin-top: 7px;
+    color: #93a9d1;
+}
+.footer-tittle h1{
+    font-size: 60px;
+    line-height: 65px;
+    font-family: 'Abel', sans-serif;
+}
+.footer-img{
+    padding: 30px 0;
+}
+.footer-img img{
+    max-width: 100%;
+}
+.footer-content{
+   padding-top: 100px;
+    color: #93a9d1;
+}
+.footer-content h1{
+    font-size: 60px;
+    line-height: 65px;
+    font-family: 'Abel', sans-serif;
+}
+.footer-info{
+margin-top: 6px;
+}
+
+.footer-info-left{
+    padding: 30px 0;
+    border-right: 2px solid;
+    border-color: rgb(42,157,214)rgb(134,166,234)rgb(226,174,253)rgb(2,240,255);
+}
+
+.footer-info-left p{
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.footer-info-right{
+    padding: 30px 0;
+
+}
+.footer-info-right ul li{
+    margin-top: 5px;
+    font-family: 'Abel', sans-serif;
+}
+.social-icon a{
+    padding: 5px;
+    display: inline-block;
+    color: #93a9d1;
+
+}
+.copyright-area{
+    padding: 50px 0;
+}
+.copyright-area p{
+    line-height: 24px;
+    font-size: 18px;
+    font-family: 'Abel', sans-serif;
+}

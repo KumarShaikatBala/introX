@@ -1,0 +1,103 @@
+/*******************************
+	All Responsive Code
+*******************************/
+/*Extra small devices (portrait phones, less than 576px) .col- */
+@media (max-width: 575.98px) {
+
+    .section-padding{
+        padding: 135px 0;
+    }
+    .image-section-padding{
+        padding: 320px 0;
+    }
+
+
+    .section-content h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+
+
+    .bg-image-content h1{
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+
+    .side-menu {
+    background-color: rgba(42,157,214,0.8);
+        width: 260px;
+    }
+    .side-menu nav.menu{
+        padding-bottom: 14px;
+    }
+    .side-menu nav.menu ul li a{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .side-menu-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .side-menu-bottom span{
+        font-size: 18px;
+    }
+    .side-menu-bottom p{
+        font-size: 14px;
+        line-height: 22px;
+        padding: 4px 0;
+    }
+    .subscribe-area form input{
+        width: 80%;
+    }
+    .subscribe-area form button {
+        right: 15%;
+    }
+    .side-menu-social-icon a{
+        padding-right: 10px;
+        margin-top: 10px;
+    }
+
+
+
+
+    .slider-content {
+         padding-top: 0;
+    }
+    .slider-content h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .slider-content p{
+        padding-top: 35px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .slider-area .owl-dots {
+        padding-top: 0;
+    }
+    .footer-tittle h1{
+        font-size: 48px;
+        line-height: 65px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up) .col-sm- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/*Medium devices (tablets, 768px and up) .col-md- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+/*Large devices (desktops, 992px and up) col-lg- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/*Extra large devices (large desktops, 1200px and up) .col-xl- */
+@media (min-width: 1200px) {
+
+}
